@@ -1,0 +1,63 @@
+.App {
+  font-family: sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "bed1 bed1 living living kitchen "
+    "bed1 bed1 living living kitchen"
+    "bed1 bed1 living living kitchen"
+    "fullbath fullbath living living kitchen"
+    "fullbath fullbath living living kitchen"
+    "bed2 bed2 halfbath halfbath bed3"
+    "bed2 bed2 halfbath halfbath bed3"
+    "bed2 bed2 halfbath halfbath bed3";
+
+  padding: 10px;
+  height: 100vh;
+}
+
+div {
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.bedroom {
+  background-color: #009090;
+}
+
+#bed-1 {
+  grid-area: bed1;
+}
+
+#bed-2 {
+  grid-area: bed2;
+}
+
+#bed-3 {
+  grid-area: bed3;
+}
+
+.bath {
+  background-color: olive;
+}
+
+#FullBath {
+  grid-area: fullbath;
+}
+
+#HalfBath {
+  grid-area: halfbath;
+}
+
+.living {
+  grid-area: living;
+  background-color: beige;
+}
+
+.kitchen {
+  display: flex;
+  flex-direction: column;
+  grid-area: kitchen;
+  background-color: orange;
+}
